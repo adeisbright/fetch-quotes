@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "An API that enable users to receive unique quotes from an external service",
   "main": "index.js",
+  "engines": {
+    "node": ">=v16.14.0",
+    "npm": ">=8.3.1"
+  },
   "scripts": {
+    "devstart": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
+    "start": "tsc && node --unhandled-rejections=strict ./dist/src/index.js",
     "test": "jest"
   },
   "repository": {
