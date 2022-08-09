@@ -14,6 +14,7 @@ interface IConfig {
     serverPort: string;
     saltFactor: number, 
     JWT: IJWT, 
+    quotesURL : string
 }
 
 const Config: IConfig = {
@@ -25,7 +26,8 @@ const Config: IConfig = {
         subject: process.env.JWT_SUBJECT as string,
         algorithm: process.env.JWT_ALGORITHM as string,
         expires: Number(process.env.JWT_EXPIRES)
-    }
+    }, 
+    quotesURL: process.env.QUOTES_URL as string 
 }
 
 export default Config;
