@@ -3,6 +3,7 @@ import helmet from "helmet";
 import cors from "cors";
 import compression from "compression";
 import httpLogger from "./common/logging/http-logger";
+import Middleware from "./Middleware"
 
 const app: express.Application = express();
 
@@ -12,6 +13,6 @@ app.use(helmet());
 app.use(httpLogger);
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
-
+app.use(Middleware.errorHandler);
 
 export default app 
