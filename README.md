@@ -2,8 +2,6 @@
 
 This test covers the design and development of an API that enable users to receive unique quotes from an external service
 
-# SMS API Endpoint
-
 This project exposes three endpoints :
 
 -   {{baseURL}}/auth/sign-up
