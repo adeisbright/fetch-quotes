@@ -8,5 +8,5 @@ COPY . .
 RUN npm install 
 ENV key=value
 EXPOSE 3800 
-CMD ["node" , "/dist/src/index.js"]
+CMD ["node" , "dist/src/index.js"]
 
