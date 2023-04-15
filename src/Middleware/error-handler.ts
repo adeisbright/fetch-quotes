@@ -4,7 +4,7 @@ import BadRequestError from "../common/error-handler/BadRequestError";
 import ForbiddenError from "../common/error-handler/ForbiddenError";
 import NotAuthorizeError from "../common/error-handler/NotAuthorizeError";
 import ErrorAlert from "../common/monitoring/ErrorAlert";
-import response, { IBody } from "../Lib/http-response";
+import response, { IBody } from "../lib/http-response";
 import fileLogger from "../common/logging/file-logger";
 
 type ErrorType =
