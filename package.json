@@ -10,6 +10,7 @@
   "scripts": {
     "devstart": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
     "start": "tsc && node --unhandled-rejections=strict ./dist/src/index.js",
+    "postinstall": "tsc",
     "test": "jest"
   },
   "repository": {
