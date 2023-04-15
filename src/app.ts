@@ -2,7 +2,7 @@ import express from "express";
 import helmet from "helmet";
 import cors from "cors";
 import compression from "compression";
-import httpLogger from "./common/logging/http-logger";
+import httpLogger from "./Common/logging/http-logger";
 import Middleware from "./Middleware"
 import authRouter from "./Features/Auth/auth.routes";
 import quoteRouter from "./Features/Quote/quote.routes";

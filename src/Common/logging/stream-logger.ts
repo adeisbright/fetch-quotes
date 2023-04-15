@@ -17,4 +17,4 @@ const stream: StreamOptions = {
     write: (message: string) => streamLogger.info(message)
 };
 
-export default stream;
+export { stream };
