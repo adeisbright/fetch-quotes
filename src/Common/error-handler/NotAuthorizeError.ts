@@ -1,4 +1,4 @@
-import constant from "../../Constant";
+import constant from "../../constant";
 import BaseError from "./BaserError";
 
 class NotAuthorizeError extends BaseError {

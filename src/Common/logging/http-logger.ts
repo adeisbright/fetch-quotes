@@ -1,6 +1,7 @@
 import morgan from "morgan";
 import { Request, Response } from "express";
-import stream from "./stream-logger";
+import { stream } from "./stream-logger";
+
 
 const customFormat = (token: any, req: Request, res: Response) => {
     return [

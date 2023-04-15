@@ -1,6 +1,6 @@
 import { Router } from "express" 
 import quoteController from "./quote.controller"
-import validateToken from "../../Middleware/validate-token"
+import validateToken from "../../middleware/validate-token"
 
 const {
    getQuote
