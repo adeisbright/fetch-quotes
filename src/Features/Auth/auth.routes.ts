@@ -1,6 +1,6 @@
 import { Router } from "express" 
 import authController from "./auth.controller"
-import validateSignupData from "../../Middleware/validate-signup-data"
+import validateSignupData from "../../middleware/validate-signup-data"
 
 const {
     handleRegistration,

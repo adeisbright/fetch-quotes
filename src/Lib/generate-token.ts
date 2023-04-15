@@ -1,6 +1,6 @@
 import * as jwt from "jsonwebtoken"
 import Config from "../config" 
-import fileLogger from "../Common/logging/file-logger"
+import fileLogger from "../common/logging/file-logger"
 
 const { JWT: { secret, subject, issuer, expires } } = Config 
 

@@ -2,10 +2,10 @@ import express from "express";
 import helmet from "helmet";
 import cors from "cors";
 import compression from "compression";
-import httpLogger from "./Common/logging/http-logger";
-import Middleware from "./Middleware"
-import authRouter from "./Features/Auth/auth.routes";
-import quoteRouter from "./Features/Quote/quote.routes";
+import httpLogger from "./common/logging/http-logger";
+import Middleware from "./middleware"
+import authRouter from "./features/auth/auth.routes";
+import quoteRouter from "./features/quote/quote.routes";
 
 const app: express.Application = express();
 

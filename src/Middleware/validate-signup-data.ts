@@ -2,7 +2,7 @@ import { NextFunction, Request, Response} from "express"
 import Joi from "joi" 
 import BadRequestError from "../common/error-handler/BadRequestError"
 import ApplicationError from "../common/error-handler/ApplicationError"
-import UserDAO from "../Features/Auth/user.DAO"
+import UserDAO from "../features/auth/user.DAO"
 
 const validateSignupData = async (
     req: Request, 
