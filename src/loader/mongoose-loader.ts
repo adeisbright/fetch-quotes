@@ -20,6 +20,7 @@ const connectTomongoDB = async () => {
                     level:"error"
                 })
                 console.log(error)
+                setTimeout(connectTomongoDB , 5000)
             });
 
         process.on("SIGINT", async () => {
