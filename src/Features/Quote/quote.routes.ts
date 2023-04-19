@@ -3,11 +3,13 @@ import quoteController from "./quote.controller"
 import validateToken from "../../middleware/validate-token"
 
 const {
-   getQuote
+   getQuote,
+   getStoredQuotes
 } = quoteController
 
 const quoteRouter = Router() 
 
-quoteRouter.get("/quote", validateToken, getQuote)
-
+quoteRouter.use(validateToken)
+quoteRouter.get("/quote",  getQuote)
+quoteRouter.get("/quotes",  getStoredQuotes)
 export default quoteRouter
