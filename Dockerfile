@@ -4,8 +4,8 @@ FROM node:16-alpine
 RUN echo 'I am testing out working with dockerfile'
 WORKDIR /app
 COPY package*.json ./ 
-RUN npm install 
 COPY . . 
+RUN npm install 
 ENV key=value
 EXPOSE 3800 
 CMD ["node" , "dist/src/index.js"]
